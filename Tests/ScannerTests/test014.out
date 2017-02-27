@@ -1,0 +1,6 @@
+1    1   reserved word   program              program
+1    9   identifier      donothing            donothing
+1    18  delimiter       ;                    ;
+2    1   reserved word   begin                begin
+3    1   reserved word   end                  end
+3    4   delimiter       .                    .

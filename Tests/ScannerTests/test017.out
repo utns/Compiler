@@ -1,0 +1,31 @@
+1    1   reserved word   type                 type
+2    3   identifier      arraytype            arraytype
+2    13  operation       =                    =
+2    15  reserved word   array                array
+2    20  delimiter       [                    [
+2    21  integer number  1                    1
+2    22  delimiter       ..                   ..
+2    24  integer number  50                   50
+2    26  delimiter       ]                    ]
+2    28  reserved word   of                   of
+2    31  identifier      integer              integer
+2    38  delimiter       ;                    ;
+4    1   reserved word   var                  var
+5    3   identifier      myarray              myarray
+5    11  delimiter       :                    :
+5    13  identifier      arraytype            arraytype
+5    22  delimiter       ;                    ;
+7    1   reserved word   for                  for
+7    5   identifier      count                count
+7    11  operation       :=                   :=
+7    14  integer number  1                    1
+7    16  reserved word   to                   to
+7    19  integer number  50                   50
+7    22  reserved word   do                   do
+8    3   delimiter       (                    (
+8    4   identifier      myarray              myarray
+8    11  delimiter       [                    [
+8    12  identifier      count                count
+8    17  delimiter       ]                    ]
+8    18  delimiter       )                    )
+8    19  delimiter       ;                    ;

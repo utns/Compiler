@@ -1,0 +1,7 @@
+1    1   real number     11e2                 1100.000000
+1    5   operation       /                    /
+1    6   real number     2e+3                 2000.000000
+1    10  operation       *                    *
+1    11  real number     2e12                 2000000000000.000000
+1    15  operation       +                    +
+1    16  real number     1e-2                 0.010000

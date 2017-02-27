@@ -1,0 +1,9 @@
+1    1   delimiter       (                    (
+1    2   integer number  12                   12
+1    4   operation       *                    *
+1    5   real number     0.454532             0.454532
+1    13  operation       -                    -
+1    14  integer number  213                  213
+1    17  delimiter       )                    )
+1    18  operation       /                    /
+1    19  real number     989.00001            989.000010

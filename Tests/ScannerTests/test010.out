@@ -1,0 +1,4 @@
+1    3   integer number  12                   12
+2    8   identifier      a123                 a123
+3    9   operation       -                    -
+3    10  real number     324.01               324.010000

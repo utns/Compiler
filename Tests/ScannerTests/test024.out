@@ -1,0 +1,10 @@
+1    1   operation       <                    <
+1    2   operation       <=                   <=
+1    4   operation       >                    >
+1    5   operation       >=                   >=
+1    7   operation       <                    <
+1    8   operation       <>                   <>
+1    10  operation       >                    >
+1    11  operation       :=                   :=
+1    13  operation       -                    -
+1    14  operation       -                    -

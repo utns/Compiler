@@ -1,0 +1,18 @@
+1    1   real number     12.1                 12.100000
+1    5   operation       <>                   <>
+1    7   real number     13.0                 13.000000
+2    1   integer number  123                  123
+2    4   operation       <                    <
+2    5   integer number  34                   34
+3    1   identifier      a                    a
+3    2   operation       >=                   >=
+3    4   identifier      b                    b
+4    1   identifier      c                    c
+4    2   operation       <=                   <=
+4    4   integer number  13                   13
+5    1   integer number  1                    1
+5    2   operation       =                    =
+5    3   integer number  2                    2
+6    1   integer number  21                   21
+6    3   operation       >                    >
+6    4   identifier      a42                  a42

@@ -1,0 +1,8 @@
+type
+  arraytype = array[1..50] of integer;
+
+var
+  myarray : arraytype;
+
+for count := 1 to 50 do
+  (myarray[count]);
