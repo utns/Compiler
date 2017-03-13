@@ -58,3 +58,18 @@ class UnexpectedSymbol: public BaseError {
     public:
         UnexpectedSymbol(int line, int pos);
 };
+
+class SyntaxError: public BaseError {
+    public:
+        SyntaxError(int line, int pos, std::string msg);
+};
+
+class IllegalExpression: public SyntaxError {
+    public:
+        IllegalExpression(int line, int pos);
+};
+
+class ExpectedError: public SyntaxError {
+    public:
+        ExpectedError(int line, int pos, std::string expected, std::string found);
+};

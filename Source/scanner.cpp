@@ -25,7 +25,7 @@ void Scanner::nextToken()  {
     text.clear();
     startLine = line;
     startPos = pos;
-    if (peek == EOF) {
+    if (peek == EOF || (token != nullptr && token->getType() == TokenType::EndOfFile)) {
         setToken(new EndOfFile(startLine, startPos));
         return;
     } else if (isDigit()) {

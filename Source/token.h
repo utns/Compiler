@@ -1,6 +1,7 @@
 #pragma once
 
 #include <string>
+#include <memory>
 
 enum class TokenType {
     And,
@@ -90,6 +91,8 @@ class Token {
         std::string text;
         TokenType type;
 };
+
+typedef std::shared_ptr<Token> TokenPtr;
 
 class Identifier: public Token {
     public:

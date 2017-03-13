@@ -28,3 +28,10 @@ IncorrectFile::IncorrectFile(std::string fileName) {
 IncorrectBinary::IncorrectBinary(int line, int pos): BaseError(line, pos, "Incorrect binary number: ") {}
 
 UnexpectedSymbol::UnexpectedSymbol(int line, int pos): BaseError(line, pos, "Unexpected symbol: ") {}
+
+SyntaxError::SyntaxError(int line, int pos, std::string msg): BaseError(line, pos, "Syntax error. " + msg) {}
+
+IllegalExpression::IllegalExpression(int line, int pos): SyntaxError(line, pos, "Illegal expression: ") {}
+
+ExpectedError::ExpectedError(int line, int pos, std::string expected, std::string found):
+        SyntaxError(line, pos, "Expected \'" + expected + "\' but \'" + found + "\' found: ") {}
