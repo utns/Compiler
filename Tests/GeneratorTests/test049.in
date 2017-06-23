@@ -1,0 +1,8 @@
+procedure foo(a: integer; b: float; c: integer);
+begin
+    writeln(a, ' ', b, ' ', c);
+end;
+
+begin
+    foo(1, 2.3, 3);
+end.

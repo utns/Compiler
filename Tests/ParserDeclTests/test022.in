@@ -1,0 +1,5 @@
+const
+    left = 1;
+    right = 2;
+type
+    a = array[left..right] of integer;

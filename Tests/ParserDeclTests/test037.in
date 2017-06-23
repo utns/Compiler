@@ -1,0 +1,5 @@
+type
+    rec = record
+        a, b: integer;
+        c: float;
+    end;

@@ -1,0 +1,6 @@
+type
+    point = record
+        x, y: float;
+    end;
+    a = point;
+    b = array[1..2] of point;

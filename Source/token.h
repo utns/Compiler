@@ -68,7 +68,7 @@ enum class TokenType {
     Identifier,
     Word,
     IntegerNumber,
-    RealNumber,
+    FloatNumber,
     String,
     Delimiter,
     Operation,
@@ -82,9 +82,8 @@ class Token {
         int getPos() const;
         std::string getText() const;
         TokenType getType() const;
-        virtual std::string getValue() const;
+        virtual std::string getValueStr() const;
         virtual std::string getTypeString() const = 0;
-        int getLenght() const;
     private:
         int line;
         int pos;
@@ -109,17 +108,19 @@ class Word: public Token {
 class IntegerNumber: public Token {
     public:
         IntegerNumber(int line, int pos, std::string text, int value);
-        std::string getValue() const;
+        std::string getValueStr() const;
         std::string getTypeString() const;
+        int getValue();
     private:
         int value;
 };
 
-class RealNumber: public Token {
+class FloatNumber: public Token {
     public:
-        RealNumber(int line, int pos, std::string text, double value);
-        std::string getValue() const;
+        FloatNumber(int line, int pos, std::string text, double value);
+        std::string getValueStr() const;
         std::string getTypeString() const;
+        double getValue();
     private:
         double value;
 };
@@ -127,7 +128,7 @@ class RealNumber: public Token {
 class String: public Token {
     public:
         String(int line, int pos, std::string text);
-        std::string getValue() const;
+        std::string getValueStr() const;
         std::string getTypeString() const;
     private:
         std::string value;

@@ -1,0 +1,9 @@
+const
+    start = 10;
+type
+    int = integer;
+    point = record
+        x, y: float;
+    end;
+var
+    a: array[start..30] of array[1..3] of integer;

@@ -1,0 +1,20 @@
+procedure foo(a: integer);
+    procedure foo(a: integer);
+    var
+        b: integer;
+    begin
+        b := a + 3;
+        writeln(b);
+    end;
+var
+    b: integer;
+begin
+    b := a * 2;
+    foo(b);
+    writeln(b);
+end;
+
+begin
+    foo(5);
+end.
+

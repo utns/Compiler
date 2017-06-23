@@ -1,0 +1,14 @@
+procedure foo(a: integer);
+    procedure foo(a: integer);
+    begin
+        writeln(a, ' - 2'); 
+    end;
+begin
+    foo(a + 1);
+    writeln(a, ' - 1');
+end;
+
+begin
+    foo(3);
+end.
+

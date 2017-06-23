@@ -1,0 +1,6 @@
+integer                  type 
+float                    type 
+char                     type 
+a                  type alias            char
+b                  type alias            char
+c                  type alias            char

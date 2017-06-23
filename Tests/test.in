@@ -1,0 +1,65 @@
+type
+    point = record
+        x, y: integer;
+    end;
+
+procedure f(var p: point);
+begin
+    writeln(p.x, ' ', p.y);
+end;
+
+procedure g();
+var
+    p: point;
+begin
+    p.x := 3;
+    p.y := 2;
+    f(p);
+    writeln(p.x, ' ', p.y);
+end;
+
+var
+    p: point;
+begin
+    p.x := 1;
+    p.y := 2;
+    f(p);
+    g();
+end.
+
+{type 
+    {point3 = record 
+        x, y, z: float;
+        d: array[1..5] of integer;
+    end;}
+     
+    point = record
+        x, y: float;
+        {f: point3;
+        d: array[1..5] of point3;}
+    end;
+    
+var
+    a: array[1..5] of array[11..20] of integer;
+    p: point; 
+    x: integer;
+    y: float;
+   
+const
+    c = 22;
+    
+procedure foo();
+begin
+
+end;
+    
+begin
+    writeln(1, ' a ', 2.3);
+    {y := 5.1 * 9.4;
+    a[1, 12] := 142;
+    writeln(a[1, 12]);
+    writeln(2 * 3, 0, 11 - 3 * 55);
+    a[1].x := 10.0;
+    p.x := 1;}
+end.}
+

@@ -1,0 +1,6 @@
+var
+    i: integer;
+begin
+    for i := 3 downto -3 do
+        writeln(i);
+end.

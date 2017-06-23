@@ -1,0 +1,16 @@
+function foo(a: integer): integer;
+    var
+        b: integer;
+    function foo(a: integer): integer;
+        var
+            b: integer;
+        function foo(a: integer): integer;
+            var
+                b: integer;
+        begin
+        end;
+    begin
+    end;
+begin
+end;
+

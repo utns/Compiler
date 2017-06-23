@@ -1,0 +1,18 @@
+integer                  type 
+float                    type 
+char                     type 
+foo                       proc
+args:          
+     a                       param         integer
+locals:        
+     b                         var         integer
+     foo                       proc
+     args:          
+          a                       param         integer
+     locals:        
+          b                         var         integer
+          foo                       proc
+          args:          
+               a                       param         integer
+          locals:        
+               b                         var         integer

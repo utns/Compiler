@@ -1,0 +1,5 @@
+const
+    left = 1;
+    right = 25;
+type
+    a = left..right;

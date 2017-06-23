@@ -1,0 +1,15 @@
+procedure foo(a: integer);
+var
+    b: integer;
+    c: float;
+    d: integer;
+begin
+    b := a;
+    c := a;
+    d := b * 2;
+    writeln(b, ' ', c, ' ', d);
+end;
+
+begin
+    foo(5);
+end.

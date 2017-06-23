@@ -1,0 +1,20 @@
+type 
+    points = record
+        x, y: array[1..100] of integer;
+    end;
+    
+procedure foo(var p: points);
+begin
+    p.x[99] := 3;
+    p.y[99] := 4;
+    writeln(p.x[99], ' ', p.y[99]);
+end;
+
+var
+    p: points;
+begin
+    p.x[99] := 1;
+    p.y[99] := 2;
+    foo(p);
+    writeln(p.x[99], ' ', p.y[99]);
+end.

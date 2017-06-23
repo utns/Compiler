@@ -1,0 +1,6 @@
+var
+    a: float;
+begin
+    a := 1;
+    write(a);
+end.

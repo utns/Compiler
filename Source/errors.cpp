@@ -35,3 +35,13 @@ IllegalExpression::IllegalExpression(int line, int pos): SyntaxError(line, pos, 
 
 ExpectedError::ExpectedError(int line, int pos, std::string expected, std::string found):
         SyntaxError(line, pos, "Expected \'" + expected + "\' but \'" + found + "\' found: ") {}
+
+OutOfRangeInteger::OutOfRangeInteger(int line, int pos) : BaseError(line, pos, "Integer number out of range: ") {}
+
+OutOfRangeFloat::OutOfRangeFloat(int line, int pos): BaseError(line, pos, "Float number out of range: ") {}
+
+Duplicate::Duplicate(int line, int pos, std::string name): BaseError(line, pos, "Duplicate " + name + ": ") {}
+
+WrongSymbol::WrongSymbol(int line, int pos, std::string name): BaseError(line, pos, "Symbol " + name + " doesn't exist: ") {}
+
+IncorrectConst::IncorrectConst(std::string name, int line, int pos): BaseError(line, pos, "Incorrect const '" + name + "': ") {}

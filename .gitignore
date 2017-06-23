@@ -1,3 +1,4 @@
 .idea/
 googletest/
 build/
+Tests/GeneratorTests/MyOut/*.o

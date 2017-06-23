@@ -1,0 +1,11 @@
+var
+    i: integer;
+    a: array[10..1] of integer;
+begin
+    i := 10;
+    while i > 0 do
+    begin
+        i := i - 1;
+        a[i] := i; 
+    end;
+end.

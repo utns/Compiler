@@ -1,0 +1,8 @@
+function foo(): integer;
+begin
+    result := 3;
+end;
+
+begin
+    writeln(foo());
+end.

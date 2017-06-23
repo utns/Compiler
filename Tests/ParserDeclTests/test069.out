@@ -1,0 +1,7 @@
+integer                  type 
+float                    type 
+char                     type 
+foo                       func
+args:          
+     result              var param         integer
+locals:        

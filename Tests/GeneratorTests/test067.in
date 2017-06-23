@@ -1,0 +1,13 @@
+function foo(): float;
+begin
+    result := 3.5;
+end;
+
+function foo1(a: float): float;
+begin
+    result := a + 5.1;
+end;
+
+begin
+    writeln(foo1(foo()));
+end.

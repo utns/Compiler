@@ -1,0 +1,13 @@
+procedure foo(a: integer);
+begin
+    a := 5;
+    writeln(a);
+end;
+
+var
+    a: integer;
+begin
+    a := 4;
+    foo(a);
+    writeln(a);
+end.

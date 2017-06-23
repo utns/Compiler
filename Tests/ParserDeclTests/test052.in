@@ -1,0 +1,6 @@
+type
+    point = record
+        x, y: float;
+    end;
+var
+    start: point;

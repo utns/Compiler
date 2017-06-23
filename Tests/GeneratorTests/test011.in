@@ -1,0 +1,6 @@
+var
+    a: integer;
+begin
+    a := 10 * 22 - 60 div 3 + 150;
+    writeln(a);
+end.

@@ -1,0 +1,7 @@
+begin
+    writeln(-5);
+    writeln(-1);
+    writeln(--2);
+    writeln(---2);
+    writeln(-0);
+end.

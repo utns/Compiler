@@ -1,0 +1,11 @@
+var
+    i, j: integer;
+    a: array[1..5] of integer;
+begin
+    j := 1;
+    for i := 1 to 5 do
+    begin
+        a[i] := i * j;    
+        j := j + i * 2; 
+    end;
+end.

@@ -1,0 +1,9 @@
+integer                  type 
+float                    type 
+char                     type 
+foo                       proc
+args:          
+     b                       param           float
+     c                       param           float
+     a                       param           float
+locals:        

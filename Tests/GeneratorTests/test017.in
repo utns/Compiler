@@ -1,0 +1,7 @@
+var
+    a: array[10..20] of integer;
+begin
+    a[10] := 50;
+    a[20] := a[10] * 2;
+    writeln(a[10], ' ' , a[20]);
+end.

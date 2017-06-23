@@ -1,0 +1,6 @@
+var
+    a: array[1..10] of float;
+begin
+    a[5] := 15.5;
+    writeln(a[5]);
+end.

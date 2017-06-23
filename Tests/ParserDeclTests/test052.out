@@ -1,0 +1,7 @@
+integer                  type 
+float                    type 
+char                     type 
+point              type alias          record
+     x                         var           float
+     y                         var           float
+start                     var           point

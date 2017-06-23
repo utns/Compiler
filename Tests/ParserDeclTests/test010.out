@@ -1,0 +1,4 @@
+integer                  type 
+float                    type 
+char                     type 
+a                  type alias         integer

@@ -1,0 +1,8 @@
+procedure foo(a: integer);
+begin
+    writeln(a);
+end;
+
+begin
+    foo(3);
+end.

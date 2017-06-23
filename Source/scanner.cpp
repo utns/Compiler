@@ -4,7 +4,72 @@
 #include "scanner.h"
 #include "errors.h"
 
-Scanner::Scanner(const char* fileName): fin(fileName), line(1), pos(0), peek(' ') {
+Scanner::Scanner(const char* fileName): fin(fileName), line(1), pos(0), peek(' '),
+        delimiters({
+            {",", TokenType::Comma},
+            {";", TokenType::Semicolon},
+            {":", TokenType::Colon},
+            {"(", TokenType::OpeningParenthesis},
+            {")", TokenType::ClosingParenthesis},
+            {"[", TokenType::OpeningSquareBracket},
+            {"]", TokenType::ClosingSquareBracket},
+            {"..", TokenType::DoubleDots},
+            {".", TokenType::Dot},
+        }),
+        operations({
+            {"+", TokenType::Add},
+            {"-", TokenType::Sub},
+            {"*", TokenType::Mul},
+            {"/", TokenType::Div},
+            {":=", TokenType::Assignment},
+            {"=", TokenType::Equal},
+            {"<>", TokenType::NotEqual},
+            {"<", TokenType::Less},
+            {"<=", TokenType::LessEqual},
+            {">=", TokenType::GreatEqual},
+            {">", TokenType::Great},
+            {"^", TokenType::Hat},
+        }),
+        reservedWords({
+            {"and",        TokenType::And},
+            {"array",      TokenType::Array},
+            {"begin",      TokenType::Begin},
+            {"break",      TokenType::Break},
+            {"case",       TokenType::Case},
+            {"const",      TokenType::Const},
+            {"continue",   TokenType::Continue},
+            {"div",        TokenType::DivRev},
+            {"do",         TokenType::Do},
+            {"downto",     TokenType::Downto},
+            {"else",       TokenType::Else},
+            {"end",        TokenType::End},
+            {"exit",       TokenType::Exit},
+            {"for",        TokenType::For},
+            {"function",   TokenType::Function},
+            {"goto",       TokenType::Goto},
+            {"if",         TokenType::If},
+            {"label",      TokenType::Label},
+            {"mod",        TokenType::Mod},
+            {"nil",        TokenType::Nil},
+            {"not",        TokenType::Not},
+            {"of",         TokenType::Of},
+            {"or",         TokenType::Or},
+            {"procedure",  TokenType::Procedure},
+            {"program",    TokenType::Program},
+            {"record",     TokenType::Record},
+            {"repeat",     TokenType::Repeat},
+            {"set",        TokenType::Set},
+            {"shl",        TokenType::Shl},
+            {"shr",        TokenType::Shr},
+            {"then",       TokenType::Then},
+            {"to",         TokenType::To},
+            {"type",       TokenType::Type},
+            {"until",      TokenType::Until},
+            {"var",        TokenType::Var},
+            {"while",      TokenType::While},
+            {"xor",        TokenType::Xor},
+        })
+{
     if (!fin.is_open()) {
         throw IncorrectFile(fileName);
     }
@@ -16,11 +81,16 @@ std::shared_ptr<Token> Scanner::getNextToken() {
 }
 
 void Scanner::nextToken()  {
+//    if (token) {
+//        std::cout << token->getText() << std::endl;
+//    }
     while (isWhitespace()) {
         readChar();
     }
     if (peek == '{') {
         skipComment();
+    } else if (peek == '/') {
+        skipSingleLineComment();
     }
     text.clear();
     startLine = line;
@@ -88,13 +158,13 @@ void Scanner::getNumber() {
             std::string str = text.substr(0, text.size() - 1);
             buffer.push_back('.');
             --this->pos;
-            setToken(new IntegerNumber(startLine, startPos, str, std::stoi(str)));
+            setIntegerNumber(str, str);
             return;
         } else if (!isDigit()) {
             throw IncorrectFloat(startLine, startPos);
         }
         while (readChar() && isDigit());
-        setToken(new RealNumber(startLine, startPos, text, std::stod(text)));
+        setFloatNumber(text);
     } else if (peek == 'e') {
         if (readChar() && !(isDigit() || peek == '+' || peek == '-')) {
             throw IncorrectFloat(startLine, startPos);
@@ -102,10 +172,10 @@ void Scanner::getNumber() {
             throw IncorrectFloat(startLine, startPos);
         } else {
             while (isDigit() && readChar());
-            setToken(new RealNumber(startLine, startPos, text, std::stod(text)));
+            setFloatNumber(text);
         }
     } else {
-        setToken(new IntegerNumber(startLine, startPos, text, std::stoi(text)));
+        setIntegerNumber(text, text);
     }
 }
 
@@ -192,7 +262,7 @@ std::string Scanner::getTokenString() {
             << std::setw(3) << token->getPos() << " "
             << std::setw(15) << token->getTypeString() << " "
             << std::setw(20) << token->getText() << " "
-            << token->getValue();
+            << token->getValueStr();
     return sstream.str();
 }
 
@@ -213,8 +283,7 @@ void Scanner::getBinary() {
     if (isDigit() && !(peek == '0' || peek == '1')) {
         throw IncorrectBinary(startLine, startPos);
     } else {
-        int value = std::stoi(text.substr(1), 0, 2);
-        setToken(new IntegerNumber(startLine, startPos, text, value));
+        setIntegerNumber(text, text.substr(1), 2);
     }
 }
 
@@ -222,4 +291,32 @@ bool Scanner::isOperation() {
     std::string str;
     str.push_back(peek);
     return operations.find(str) != operations.end();
+}
+
+void Scanner::skipSingleLineComment() {
+    if (readChar() && peek != '/') {
+        buffer.push_back('/');
+        buffer.push_back(peek);
+        pos -= 2;
+        readChar();
+    } else {
+        while (readChar() && peek != '\n');
+        readChar();
+    }
+}
+
+void Scanner::setIntegerNumber(std::string text, std::string value, int base) {
+    try {
+        setToken(new IntegerNumber(startLine, startPos, text, std::stoi(value, 0, base)));
+    } catch (std::out_of_range outOfRange) {
+        throw OutOfRangeInteger(startLine, startPos);
+    }
+}
+
+void Scanner::setFloatNumber(std::string text) {
+    try {
+        setToken(new FloatNumber(startLine, startPos, text, std::stod(text)));
+    } catch (std::out_of_range outOfRange) {
+        throw OutOfRangeFloat(startLine, startPos);
+    }
 }

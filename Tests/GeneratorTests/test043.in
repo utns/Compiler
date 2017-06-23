@@ -1,0 +1,14 @@
+var
+    i: integer;
+begin
+    i := 0;
+    while i <= 10 do
+    begin
+        i := i + 1;
+        if i = 9 then
+            break;
+        if i mod 2 = 1 then
+            continue;
+        writeln(i);
+    end;
+end.

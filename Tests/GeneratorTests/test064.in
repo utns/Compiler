@@ -1,0 +1,13 @@
+procedure foo(var a: array[1..3] of float);
+begin
+    a[2] := 15.2;
+    writeln(a[2]);
+end;
+ 
+var
+    a: array[1..3] of float;
+begin
+    a[2] := 155.1;
+    foo(a);
+    writeln(a[2]);
+end.

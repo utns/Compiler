@@ -1,0 +1,20 @@
+begin
+end
+
+begin
+if
+____(
+     __foo
+then
+begin
+     ____1
+___:=
+     ____a
+____(
+     __foo
+__end
+else
+     ____2
+___:=
+     ____a
+end

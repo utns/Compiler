@@ -22,7 +22,7 @@ f.write(header)
 
 test = """TEST(ParserExprTests, {0}) {{
     Parser parser("{0}.in");
-    EXPECT_EQ(fileToString("{0}.out"), parser.getTreeString()) << "Input: " << std::endl << fileToString("{0}.in");
+    EXPECT_EQ(fileToString("{0}.out"), parser.getExprTreeString()) << "Input: " << std::endl << fileToString("{0}.in");
 }}
 
 """

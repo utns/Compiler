@@ -73,3 +73,28 @@ class ExpectedError: public SyntaxError {
     public:
         ExpectedError(int line, int pos, std::string expected, std::string found);
 };
+
+class OutOfRangeInteger: public BaseError {
+    public:
+        OutOfRangeInteger(int line, int pos);
+};
+
+class OutOfRangeFloat: public BaseError {
+    public:
+        OutOfRangeFloat(int line, int pos);
+};
+
+class Duplicate: public BaseError {
+    public:
+        Duplicate(int line, int pos, std::string name);
+};
+
+class WrongSymbol: public BaseError {
+    public:
+        WrongSymbol(int line, int pos, std::string name);
+};
+
+class IncorrectConst: public BaseError {
+    public:
+        IncorrectConst(std::string name, int line = -1, int pos = -1);
+};

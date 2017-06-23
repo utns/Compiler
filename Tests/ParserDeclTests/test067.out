@@ -1,0 +1,13 @@
+integer                  type 
+float                    type 
+char                     type 
+foo                       proc
+args:          
+     a1                      param         integer
+     a2                  var param           float
+locals:        
+     rec                type alias          record
+          x                         var         integer
+          y                         var         integer
+     b1                        var             rec
+     b2                        var             rec

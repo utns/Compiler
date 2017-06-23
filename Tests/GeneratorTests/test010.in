@@ -1,0 +1,6 @@
+var
+    a: float;
+begin
+    a := 1.0;
+    writeln(a);
+end.

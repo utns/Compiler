@@ -1,0 +1,10 @@
+procedure foo();
+const
+    a =1;
+type
+    b = integer;
+var
+    c: b;
+begin
+end;
+    

@@ -1,0 +1,9 @@
+procedure foo(a1: integer; var a2: float);
+type
+    rec = record
+        x, y: integer;
+    end;
+var
+    b1, b2: rec; 
+begin
+end;

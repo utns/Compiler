@@ -1,0 +1,7 @@
+begin
+    writeln(2 + 3);
+    writeln(2 - 3);
+    writeln(20 * 3);
+    writeln(20 div 3); 
+    writeln(20 mod 3);
+end.

@@ -1,0 +1,11 @@
+type
+    point = record
+        x, y: float;
+    end;
+var
+    points: array[1..10] of point;
+begin
+    points[1].x := 33.5;
+    points[10].y := 0.1;
+    write(points[1].x, ' ', points[10].y);
+end.

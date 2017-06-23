@@ -1,0 +1,9 @@
+integer                  type 
+float                    type 
+char                     type 
+foo                       proc
+args:          
+locals:        
+     a                   const int               1
+     b                  type alias         integer
+     c                         var               b

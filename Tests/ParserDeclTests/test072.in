@@ -1,0 +1,8 @@
+type
+    point = record
+        x, y: float;
+    end;
+    
+function foo(start: point): point;
+begin
+end;

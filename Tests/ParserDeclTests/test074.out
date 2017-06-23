@@ -1,0 +1,7 @@
+integer                  type 
+float                    type 
+char                     type 
+foo                       proc
+args:          
+     a                       param      open array
+locals:        

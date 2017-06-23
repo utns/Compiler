@@ -1,0 +1,8 @@
+integer                  type 
+float                    type 
+char                     type 
+a                   const int               2
+b                 const float             2.5
+c                   const int               2
+d                 const float             2.5
+e                 const float             2.5

@@ -1,0 +1,7 @@
+integer                  type 
+float                    type 
+char                     type 
+rec                type alias          record
+     a                         var         integer
+     b                         var         integer
+     c                         var           float

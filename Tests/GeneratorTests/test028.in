@@ -1,0 +1,15 @@
+type
+    point = record
+        x, y: float;
+    end;
+    
+    points = record
+        a, b: point;
+    end;
+var
+    p: points;
+begin
+    p.a.y := 1.5;
+    p.b.x := 3.1;
+    write(p.a.y, ' ', p.b.x);
+end.

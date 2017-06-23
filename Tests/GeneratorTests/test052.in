@@ -1,0 +1,19 @@
+procedure foo(a: integer);
+    procedure foo(var a: integer);
+    begin
+        a := 5;
+        writeln(a, ' - 2'); 
+    end;
+begin
+    a := 4;
+    foo(a);
+    writeln(a, ' - 1');
+end;
+
+var
+    a: integer; 
+begin
+    a := 3;
+    foo(a);
+    writeln(a, ' - 0');
+end.

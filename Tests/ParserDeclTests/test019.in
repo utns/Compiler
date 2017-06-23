@@ -1,0 +1,4 @@
+const
+    c = 2.0;
+type
+    a = 1..c;

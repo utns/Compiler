@@ -1,0 +1,8 @@
+var
+    a, b, c: integer;
+begin
+    a := 2;
+    b := a + 10;
+    c := 0;
+    writeln(a, ' ', b, ' ', a * b, ' ', b * c);
+end.

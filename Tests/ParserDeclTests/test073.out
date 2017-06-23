@@ -1,0 +1,21 @@
+integer                  type 
+float                    type 
+char                     type 
+foo                       func
+args:          
+     a                       param         integer
+     result              var param         integer
+locals:        
+     b                         var         integer
+     foo                       func
+     args:          
+          a                       param         integer
+          result              var param         integer
+     locals:        
+          b                         var         integer
+          foo                       func
+          args:          
+               a                       param         integer
+               result              var param         integer
+          locals:        
+               b                         var         integer

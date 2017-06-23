@@ -1,0 +1,15 @@
+var
+    a: integer;
+    
+procedure foo();
+    procedure foo();
+    begin
+        a := 1;
+    end;
+begin
+    foo();
+end;
+
+begin
+    foo();
+end.

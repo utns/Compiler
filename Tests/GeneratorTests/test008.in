@@ -1,0 +1,6 @@
+begin
+    writeln(5.5 + 2.75);
+    writeln(5.5 - 2.75);
+    writeln(5.5 * 2.75);
+    writeln(5.5 / 2.75);
+end.

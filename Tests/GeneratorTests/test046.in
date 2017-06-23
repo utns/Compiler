@@ -1,0 +1,8 @@
+procedure foo(a: float);
+begin
+    writeln(a);
+end;
+
+begin
+    foo(3.5);
+end.

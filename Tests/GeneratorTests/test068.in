@@ -1,0 +1,20 @@
+type
+    point = record
+        x, y: integer; 
+    end;
+
+function foo(start: point): point;
+begin
+    result.x := start.x + 3;
+    result.y := start.y - 5; 
+end;
+
+var
+    p1, p2: point;
+begin
+    p1.x := 3;
+    p1.y := 4;
+    p2 := foo(p1);
+    writeln(p1.x, ' ', p1.y);
+    writeln(p2.x, ' ', p2.y);
+end.

@@ -1,0 +1,5 @@
+integer                  type 
+float                    type 
+char                     type 
+a                         var         integer
+b                         var         integer

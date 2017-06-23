@@ -1,0 +1,5 @@
+integer                  type 
+float                    type 
+char                     type 
+range              type alias  subrange 0..30
+a                  type alias array[1..2] of array[0..30] of integer

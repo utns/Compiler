@@ -1,0 +1,3 @@
+procedure foo(a1, a2, a3: integer; var b1, b2: float; c1: float);
+begin
+end;

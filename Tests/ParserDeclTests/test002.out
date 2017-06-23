@@ -1,0 +1,5 @@
+integer                  type 
+float                    type 
+char                     type 
+a                   const int               1
+b                   const int               1

@@ -1,0 +1,52 @@
+function foo(var b2: integer; var b4, b5: float): integer;
+    procedure goo(var b2: integer);
+    var
+        c1: integer;
+    begin
+    end;
+    var
+        c1: integer;
+begin
+end;
+
+type
+    point = record
+        x: integer;
+        y: integer;
+    end;
+var
+    start: point;
+
+var
+	a, b: integer;
+	e: float;
+	c: ^float;
+	d: array[1..2] of array[1..3] of integer;
+
+begin
+end.
+
+{const
+    f = 10;
+    good  = 124.12;
+const
+    e = 3;
+    asd = good;
+type
+    a1 = integer;
+    a2 = a1;
+    a3 = a2;
+    a4 = 1..2;
+    a5 = e..5;
+    a6 = e..f;
+    a7 = a6;
+type
+    point = record
+        x: integer;
+        y: integer;
+    end;
+var
+    start: ^point;
+type
+    a8 = ^point;
+}

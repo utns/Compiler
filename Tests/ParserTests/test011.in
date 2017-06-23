@@ -1,0 +1,11 @@
+type 
+    point = record
+        x, y: float;
+    end;
+    
+var
+    a: array[1..5] of point;
+    
+begin
+    a[1].x := 10.0; 
+end.

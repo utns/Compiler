@@ -170,3 +170,8 @@ TEST(ScannerTests, test031) {
     EXPECT_EQ(fileToString("test031.out"), scanner.getTokensString()) << "Input: " << std::endl << fileToString("test031.in");
 }
 
+TEST(ScannerTests, test032) {
+    Scanner scanner("test032.in");
+    EXPECT_EQ(fileToString("test032.out"), scanner.getTokensString()) << "Input: " << std::endl << fileToString("test032.in");
+}
+

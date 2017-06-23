@@ -15,196 +15,241 @@ std::string fileToString(std::string name) {
 
 TEST(ParserExprTests, test000) {
     Parser parser("test000.in");
-    EXPECT_EQ(fileToString("test000.out"), parser.getTreeString()) << "Input: " << std::endl << fileToString("test000.in");
+    EXPECT_EQ(fileToString("test000.out"), parser.getExprTreeString()) << "Input: " << std::endl << fileToString("test000.in");
 }
 
 TEST(ParserExprTests, test001) {
     Parser parser("test001.in");
-    EXPECT_EQ(fileToString("test001.out"), parser.getTreeString()) << "Input: " << std::endl << fileToString("test001.in");
+    EXPECT_EQ(fileToString("test001.out"), parser.getExprTreeString()) << "Input: " << std::endl << fileToString("test001.in");
 }
 
 TEST(ParserExprTests, test002) {
     Parser parser("test002.in");
-    EXPECT_EQ(fileToString("test002.out"), parser.getTreeString()) << "Input: " << std::endl << fileToString("test002.in");
+    EXPECT_EQ(fileToString("test002.out"), parser.getExprTreeString()) << "Input: " << std::endl << fileToString("test002.in");
 }
 
 TEST(ParserExprTests, test003) {
     Parser parser("test003.in");
-    EXPECT_EQ(fileToString("test003.out"), parser.getTreeString()) << "Input: " << std::endl << fileToString("test003.in");
+    EXPECT_EQ(fileToString("test003.out"), parser.getExprTreeString()) << "Input: " << std::endl << fileToString("test003.in");
 }
 
 TEST(ParserExprTests, test004) {
     Parser parser("test004.in");
-    EXPECT_EQ(fileToString("test004.out"), parser.getTreeString()) << "Input: " << std::endl << fileToString("test004.in");
+    EXPECT_EQ(fileToString("test004.out"), parser.getExprTreeString()) << "Input: " << std::endl << fileToString("test004.in");
 }
 
 TEST(ParserExprTests, test005) {
     Parser parser("test005.in");
-    EXPECT_EQ(fileToString("test005.out"), parser.getTreeString()) << "Input: " << std::endl << fileToString("test005.in");
+    EXPECT_EQ(fileToString("test005.out"), parser.getExprTreeString()) << "Input: " << std::endl << fileToString("test005.in");
 }
 
 TEST(ParserExprTests, test006) {
     Parser parser("test006.in");
-    EXPECT_EQ(fileToString("test006.out"), parser.getTreeString()) << "Input: " << std::endl << fileToString("test006.in");
+    EXPECT_EQ(fileToString("test006.out"), parser.getExprTreeString()) << "Input: " << std::endl << fileToString("test006.in");
 }
 
 TEST(ParserExprTests, test007) {
     Parser parser("test007.in");
-    EXPECT_EQ(fileToString("test007.out"), parser.getTreeString()) << "Input: " << std::endl << fileToString("test007.in");
+    EXPECT_EQ(fileToString("test007.out"), parser.getExprTreeString()) << "Input: " << std::endl << fileToString("test007.in");
 }
 
 TEST(ParserExprTests, test008) {
     Parser parser("test008.in");
-    EXPECT_EQ(fileToString("test008.out"), parser.getTreeString()) << "Input: " << std::endl << fileToString("test008.in");
+    EXPECT_EQ(fileToString("test008.out"), parser.getExprTreeString()) << "Input: " << std::endl << fileToString("test008.in");
 }
 
 TEST(ParserExprTests, test009) {
     Parser parser("test009.in");
-    EXPECT_EQ(fileToString("test009.out"), parser.getTreeString()) << "Input: " << std::endl << fileToString("test009.in");
+    EXPECT_EQ(fileToString("test009.out"), parser.getExprTreeString()) << "Input: " << std::endl << fileToString("test009.in");
 }
 
 TEST(ParserExprTests, test010) {
     Parser parser("test010.in");
-    EXPECT_EQ(fileToString("test010.out"), parser.getTreeString()) << "Input: " << std::endl << fileToString("test010.in");
+    EXPECT_EQ(fileToString("test010.out"), parser.getExprTreeString()) << "Input: " << std::endl << fileToString("test010.in");
 }
 
 TEST(ParserExprTests, test011) {
     Parser parser("test011.in");
-    EXPECT_EQ(fileToString("test011.out"), parser.getTreeString()) << "Input: " << std::endl << fileToString("test011.in");
+    EXPECT_EQ(fileToString("test011.out"), parser.getExprTreeString()) << "Input: " << std::endl << fileToString("test011.in");
 }
 
 TEST(ParserExprTests, test012) {
     Parser parser("test012.in");
-    EXPECT_EQ(fileToString("test012.out"), parser.getTreeString()) << "Input: " << std::endl << fileToString("test012.in");
+    EXPECT_EQ(fileToString("test012.out"), parser.getExprTreeString()) << "Input: " << std::endl << fileToString("test012.in");
 }
 
 TEST(ParserExprTests, test013) {
     Parser parser("test013.in");
-    EXPECT_EQ(fileToString("test013.out"), parser.getTreeString()) << "Input: " << std::endl << fileToString("test013.in");
+    EXPECT_EQ(fileToString("test013.out"), parser.getExprTreeString()) << "Input: " << std::endl << fileToString("test013.in");
 }
 
 TEST(ParserExprTests, test014) {
     Parser parser("test014.in");
-    EXPECT_EQ(fileToString("test014.out"), parser.getTreeString()) << "Input: " << std::endl << fileToString("test014.in");
+    EXPECT_EQ(fileToString("test014.out"), parser.getExprTreeString()) << "Input: " << std::endl << fileToString("test014.in");
 }
 
 TEST(ParserExprTests, test015) {
     Parser parser("test015.in");
-    EXPECT_EQ(fileToString("test015.out"), parser.getTreeString()) << "Input: " << std::endl << fileToString("test015.in");
+    EXPECT_EQ(fileToString("test015.out"), parser.getExprTreeString()) << "Input: " << std::endl << fileToString("test015.in");
 }
 
 TEST(ParserExprTests, test016) {
     Parser parser("test016.in");
-    EXPECT_EQ(fileToString("test016.out"), parser.getTreeString()) << "Input: " << std::endl << fileToString("test016.in");
+    EXPECT_EQ(fileToString("test016.out"), parser.getExprTreeString()) << "Input: " << std::endl << fileToString("test016.in");
 }
 
 TEST(ParserExprTests, test017) {
     Parser parser("test017.in");
-    EXPECT_EQ(fileToString("test017.out"), parser.getTreeString()) << "Input: " << std::endl << fileToString("test017.in");
+    EXPECT_EQ(fileToString("test017.out"), parser.getExprTreeString()) << "Input: " << std::endl << fileToString("test017.in");
 }
 
 TEST(ParserExprTests, test018) {
     Parser parser("test018.in");
-    EXPECT_EQ(fileToString("test018.out"), parser.getTreeString()) << "Input: " << std::endl << fileToString("test018.in");
+    EXPECT_EQ(fileToString("test018.out"), parser.getExprTreeString()) << "Input: " << std::endl << fileToString("test018.in");
 }
 
 TEST(ParserExprTests, test019) {
     Parser parser("test019.in");
-    EXPECT_EQ(fileToString("test019.out"), parser.getTreeString()) << "Input: " << std::endl << fileToString("test019.in");
+    EXPECT_EQ(fileToString("test019.out"), parser.getExprTreeString()) << "Input: " << std::endl << fileToString("test019.in");
 }
 
 TEST(ParserExprTests, test020) {
     Parser parser("test020.in");
-    EXPECT_EQ(fileToString("test020.out"), parser.getTreeString()) << "Input: " << std::endl << fileToString("test020.in");
+    EXPECT_EQ(fileToString("test020.out"), parser.getExprTreeString()) << "Input: " << std::endl << fileToString("test020.in");
 }
 
 TEST(ParserExprTests, test021) {
     Parser parser("test021.in");
-    EXPECT_EQ(fileToString("test021.out"), parser.getTreeString()) << "Input: " << std::endl << fileToString("test021.in");
+    EXPECT_EQ(fileToString("test021.out"), parser.getExprTreeString()) << "Input: " << std::endl << fileToString("test021.in");
 }
 
 TEST(ParserExprTests, test022) {
     Parser parser("test022.in");
-    EXPECT_EQ(fileToString("test022.out"), parser.getTreeString()) << "Input: " << std::endl << fileToString("test022.in");
+    EXPECT_EQ(fileToString("test022.out"), parser.getExprTreeString()) << "Input: " << std::endl << fileToString("test022.in");
 }
 
 TEST(ParserExprTests, test023) {
     Parser parser("test023.in");
-    EXPECT_EQ(fileToString("test023.out"), parser.getTreeString()) << "Input: " << std::endl << fileToString("test023.in");
+    EXPECT_EQ(fileToString("test023.out"), parser.getExprTreeString()) << "Input: " << std::endl << fileToString("test023.in");
 }
 
 TEST(ParserExprTests, test024) {
     Parser parser("test024.in");
-    EXPECT_EQ(fileToString("test024.out"), parser.getTreeString()) << "Input: " << std::endl << fileToString("test024.in");
+    EXPECT_EQ(fileToString("test024.out"), parser.getExprTreeString()) << "Input: " << std::endl << fileToString("test024.in");
 }
 
 TEST(ParserExprTests, test025) {
     Parser parser("test025.in");
-    EXPECT_EQ(fileToString("test025.out"), parser.getTreeString()) << "Input: " << std::endl << fileToString("test025.in");
+    EXPECT_EQ(fileToString("test025.out"), parser.getExprTreeString()) << "Input: " << std::endl << fileToString("test025.in");
 }
 
 TEST(ParserExprTests, test026) {
     Parser parser("test026.in");
-    EXPECT_EQ(fileToString("test026.out"), parser.getTreeString()) << "Input: " << std::endl << fileToString("test026.in");
+    EXPECT_EQ(fileToString("test026.out"), parser.getExprTreeString()) << "Input: " << std::endl << fileToString("test026.in");
 }
 
 TEST(ParserExprTests, test027) {
     Parser parser("test027.in");
-    EXPECT_EQ(fileToString("test027.out"), parser.getTreeString()) << "Input: " << std::endl << fileToString("test027.in");
+    EXPECT_EQ(fileToString("test027.out"), parser.getExprTreeString()) << "Input: " << std::endl << fileToString("test027.in");
 }
 
 TEST(ParserExprTests, test028) {
     Parser parser("test028.in");
-    EXPECT_EQ(fileToString("test028.out"), parser.getTreeString()) << "Input: " << std::endl << fileToString("test028.in");
+    EXPECT_EQ(fileToString("test028.out"), parser.getExprTreeString()) << "Input: " << std::endl << fileToString("test028.in");
 }
 
 TEST(ParserExprTests, test029) {
     Parser parser("test029.in");
-    EXPECT_EQ(fileToString("test029.out"), parser.getTreeString()) << "Input: " << std::endl << fileToString("test029.in");
+    EXPECT_EQ(fileToString("test029.out"), parser.getExprTreeString()) << "Input: " << std::endl << fileToString("test029.in");
 }
 
 TEST(ParserExprTests, test030) {
     Parser parser("test030.in");
-    EXPECT_EQ(fileToString("test030.out"), parser.getTreeString()) << "Input: " << std::endl << fileToString("test030.in");
+    EXPECT_EQ(fileToString("test030.out"), parser.getExprTreeString()) << "Input: " << std::endl << fileToString("test030.in");
 }
 
 TEST(ParserExprTests, test031) {
     Parser parser("test031.in");
-    EXPECT_EQ(fileToString("test031.out"), parser.getTreeString()) << "Input: " << std::endl << fileToString("test031.in");
+    EXPECT_EQ(fileToString("test031.out"), parser.getExprTreeString()) << "Input: " << std::endl << fileToString("test031.in");
 }
 
 TEST(ParserExprTests, test032) {
     Parser parser("test032.in");
-    EXPECT_EQ(fileToString("test032.out"), parser.getTreeString()) << "Input: " << std::endl << fileToString("test032.in");
+    EXPECT_EQ(fileToString("test032.out"), parser.getExprTreeString()) << "Input: " << std::endl << fileToString("test032.in");
 }
 
 TEST(ParserExprTests, test033) {
     Parser parser("test033.in");
-    EXPECT_EQ(fileToString("test033.out"), parser.getTreeString()) << "Input: " << std::endl << fileToString("test033.in");
+    EXPECT_EQ(fileToString("test033.out"), parser.getExprTreeString()) << "Input: " << std::endl << fileToString("test033.in");
 }
 
 TEST(ParserExprTests, test034) {
     Parser parser("test034.in");
-    EXPECT_EQ(fileToString("test034.out"), parser.getTreeString()) << "Input: " << std::endl << fileToString("test034.in");
+    EXPECT_EQ(fileToString("test034.out"), parser.getExprTreeString()) << "Input: " << std::endl << fileToString("test034.in");
 }
 
 TEST(ParserExprTests, test035) {
     Parser parser("test035.in");
-    EXPECT_EQ(fileToString("test035.out"), parser.getTreeString()) << "Input: " << std::endl << fileToString("test035.in");
+    EXPECT_EQ(fileToString("test035.out"), parser.getExprTreeString()) << "Input: " << std::endl << fileToString("test035.in");
 }
 
 TEST(ParserExprTests, test036) {
     Parser parser("test036.in");
-    EXPECT_EQ(fileToString("test036.out"), parser.getTreeString()) << "Input: " << std::endl << fileToString("test036.in");
+    EXPECT_EQ(fileToString("test036.out"), parser.getExprTreeString()) << "Input: " << std::endl << fileToString("test036.in");
 }
 
 TEST(ParserExprTests, test037) {
     Parser parser("test037.in");
-    EXPECT_EQ(fileToString("test037.out"), parser.getTreeString()) << "Input: " << std::endl << fileToString("test037.in");
+    EXPECT_EQ(fileToString("test037.out"), parser.getExprTreeString()) << "Input: " << std::endl << fileToString("test037.in");
 }
 
 TEST(ParserExprTests, test038) {
     Parser parser("test038.in");
-    EXPECT_EQ(fileToString("test038.out"), parser.getTreeString()) << "Input: " << std::endl << fileToString("test038.in");
+    EXPECT_EQ(fileToString("test038.out"), parser.getExprTreeString()) << "Input: " << std::endl << fileToString("test038.in");
+}
+
+TEST(ParserExprTests, test039) {
+    Parser parser("test039.in");
+    EXPECT_EQ(fileToString("test039.out"), parser.getExprTreeString()) << "Input: " << std::endl << fileToString("test039.in");
+}
+
+TEST(ParserExprTests, test040) {
+    Parser parser("test040.in");
+    EXPECT_EQ(fileToString("test040.out"), parser.getExprTreeString()) << "Input: " << std::endl << fileToString("test040.in");
+}
+
+TEST(ParserExprTests, test041) {
+    Parser parser("test041.in");
+    EXPECT_EQ(fileToString("test041.out"), parser.getExprTreeString()) << "Input: " << std::endl << fileToString("test041.in");
+}
+
+TEST(ParserExprTests, test042) {
+    Parser parser("test042.in");
+    EXPECT_EQ(fileToString("test042.out"), parser.getExprTreeString()) << "Input: " << std::endl << fileToString("test042.in");
+}
+
+TEST(ParserExprTests, test043) {
+    Parser parser("test043.in");
+    EXPECT_EQ(fileToString("test043.out"), parser.getExprTreeString()) << "Input: " << std::endl << fileToString("test043.in");
+}
+
+TEST(ParserExprTests, test044) {
+    Parser parser("test044.in");
+    EXPECT_EQ(fileToString("test044.out"), parser.getExprTreeString()) << "Input: " << std::endl << fileToString("test044.in");
+}
+
+TEST(ParserExprTests, test045) {
+    Parser parser("test045.in");
+    EXPECT_EQ(fileToString("test045.out"), parser.getExprTreeString()) << "Input: " << std::endl << fileToString("test045.in");
+}
+
+TEST(ParserExprTests, test046) {
+    Parser parser("test046.in");
+    EXPECT_EQ(fileToString("test046.out"), parser.getExprTreeString()) << "Input: " << std::endl << fileToString("test046.in");
+}
+
+TEST(ParserExprTests, test047) {
+    Parser parser("test047.in");
+    EXPECT_EQ(fileToString("test047.out"), parser.getExprTreeString()) << "Input: " << std::endl << fileToString("test047.in");
 }
 

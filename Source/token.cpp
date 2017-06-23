@@ -2,7 +2,9 @@
 #include <iostream>
 #include "token.h"
 
-Token::Token(int line, int pos, std::string text, TokenType type): line(line), pos(pos), text(text), type(type) {}
+Token::Token(int line, int pos, std::string text, TokenType type): line(line), pos(pos), text(text), type(type) {
+//    std::cout << text << std::endl;
+}
 
 int Token::getLine() const {
     return line;
@@ -20,17 +22,13 @@ TokenType Token::getType() const {
     return type;
 }
 
-std::string Token::getValue() const {
+std::string Token::getValueStr() const {
     return text;
-}
-
-int Token::getLenght() const {
-    return text.length();
 }
 
 IntegerNumber::IntegerNumber(int line, int pos, std::string text, int value): Token(line, pos, text, TokenType::IntegerNumber), value(value) {}
 
-std::string IntegerNumber::getValue() const {
+std::string IntegerNumber::getValueStr() const {
     return std::to_string(value);
 }
 
@@ -38,21 +36,29 @@ std::string IntegerNumber::getTypeString() const {
     return "integer number";
 }
 
-RealNumber::RealNumber(int line, int pos, std::string text, double value): Token(line, pos, text, TokenType::RealNumber), value(value) {}
+int IntegerNumber::getValue() {
+    return value;
+}
 
-std::string RealNumber::getValue() const {
+FloatNumber::FloatNumber(int line, int pos, std::string text, double value): Token(line, pos, text, TokenType::FloatNumber), value(value) {}
+
+std::string FloatNumber::getValueStr() const {
     return std::to_string(value);
 }
 
-std::string RealNumber::getTypeString() const {
+std::string FloatNumber::getTypeString() const {
     return "real number";
+}
+
+double FloatNumber::getValue() {
+    return value;
 }
 
 String::String(int line, int pos, std::string text): Token(line, pos, text, TokenType::String) {
     value = text.substr(1, text.size() - 2);
 }
 
-std::string String::getValue() const {
+std::string String::getValueStr() const {
     return value;
 }
 

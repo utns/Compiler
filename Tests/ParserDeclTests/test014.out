@@ -1,0 +1,5 @@
+integer                  type 
+float                    type 
+char                     type 
+a                  type alias subrange 10..20
+b                  type alias subrange 10..20

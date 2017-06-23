@@ -1,0 +1,4 @@
+begin
+    writeln(not 0);
+    writeln(not 1);
+end.

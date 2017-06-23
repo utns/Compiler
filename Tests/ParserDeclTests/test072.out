@@ -1,0 +1,11 @@
+integer                  type 
+float                    type 
+char                     type 
+point              type alias          record
+     x                         var           float
+     y                         var           float
+foo                       func
+args:          
+     start                   param           point
+     result              var param           point
+locals:        

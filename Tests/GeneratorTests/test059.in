@@ -1,0 +1,11 @@
+procedure foo(a: float);
+var
+    c: array[1..100] of float;
+begin
+    c[15] := a;
+    writeln(c[15]);
+end;
+
+begin
+    foo(5.3);
+end.

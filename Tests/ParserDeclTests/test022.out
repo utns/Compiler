@@ -1,0 +1,6 @@
+integer                  type 
+float                    type 
+char                     type 
+left                const int               1
+right               const int               2
+a                  type alias array[1..2] of integer

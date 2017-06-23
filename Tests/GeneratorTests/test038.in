@@ -1,0 +1,8 @@
+begin
+    if 0 then
+    begin
+        write('then');
+    end else begin
+        write('else');
+    end
+end.

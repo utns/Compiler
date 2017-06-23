@@ -1,0 +1,10 @@
+integer                  type 
+float                    type 
+char                     type 
+point              type alias          record
+     x                         var           float
+     y                         var           float
+a                  type alias          record
+     x                         var           float
+     y                         var           float
+b                  type alias array[1..2] of point
